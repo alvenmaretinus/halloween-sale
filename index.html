@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<![endif]-->
+	<title>Halloween Sale</title>
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header__img header__img--castle"></div>
+		<div class="header__main">
+			<h1 class="header__title">Halloween Sale</h1>
+			<h4 class="header__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+		</div>
+		<div class="header__img header__img--cauldron"></div>
+	</header>
+	<main class="maincontent">
+		<section class="event">
+			<img class="event__img" src="img/pumpkin.png">
+			<div class="event__details">
+				<a class="event__socialbtn" href="#">Share to Facebook</a>
+				<h1 class="event__title">Halloween Event</h1>
+				<h2 class="event__titledesc">Shop now and get a Trick or Treat</h2>
+				<h4 class="event__desc">Yuk, event ini berlaku mulai tanggal 21 - 31 Oktober 2016, buruan ikutan, produknya lengkap, harga murah, dapet bonus trick or treat juga.</h4>
+			</div>
+		</section>
+		<section class="items">
+			<div class="items__tab">
+				<button id="elektroniktab" class="items__tablink items__tablink--state-active" onclick="openTab(event, 'elektronik')">Elektronik</button>
+				<button id="fashiontab" class="items__tablink" onclick="openTab(event, 'fashion')">Fashion</button>
+				<button id="lainnyatab" class="items__tablink" onclick="openTab(event, 'lainnya')">Lainnya</button>
+			</div>
+			<div id="elektronik" class="items__tabcontent items__tabcontent--state-active">
+				<ul class="items__list">
+					<li class="items__single">
+						<img class="items__img" src="img/sandisk.jpg">
+						<div class="items__detail">
+							<h3 class="items__name">Sandisk Ultra 3X</h3>
+							<h3 class="items__price">Rp 500.000</h3>
+							<button class="items__buybtn">Buy Now</button>
+						</div>
+					</li>
+					<li class="items__single items__single--state-outofstock">
+						<img class="items__img" src="img/sandisk.jpg">
+						<div class="items__detail">
+							<h3 class="items__name">Sandisk Ultra 3X</h3>
+							<h3 class="items__price">Rp 500.000</h3>
+							<button class="items__buybtn">Buy Now</button>
+						</div>
+					</li>
+					<li class="items__single items__single--state-bestprice">
+						<img class="items__img" src="img/sandisk.jpg">
+						<div class="items__detail">
+							<h3 class="items__name">Sandisk Ultra 3X</h3>
+							<h3 class="items__price">Rp 500.000</h3>
+							<button class="items__buybtn">Buy Now</button>
+						</div>
+					</li>
+					<li class="items__single items__single--state-outofstock">
+						<img class="items__img" src="img/sandisk.jpg">
+						<div class="items__detail">
+							<h3 class="items__name">Sandisk Ultra 3X</h3>
+							<h3 class="items__price">Rp 500.000</h3>
+							<button class="items__buybtn">Buy Now</button>
+						</div>
+					</li>
+					<li class="items__single">
+						<img class="items__img" src="img/sandisk.jpg">
+						<div class="items__detail">
+							<h3 class="items__name">Sandisk Ultra 3X</h3>
+							<h3 class="items__price">Rp 500.000</h3>
+							<button class="items__buybtn">Buy Now</button>
+						</div>
+					</li>
+					<li class="items__single">
+						<img class="items__img" src="img/sandisk.jpg">
+						<div class="items__detail">
+							<h3 class="items__name">Sandisk Ultra 3X</h3>
+							<h3 class="items__price">Rp 500.000</h3>
+							<button class="items__buybtn">Buy Now</button>
+						</div>
+					</li>
+					<li class="items__single items__single--state-bestprice">
+						<img class="items__img" src="img/sandisk.jpg">
+						<div class="items__detail">
+							<h3 class="items__name">Sandisk Ultra 3X</h3>
+							<h3 class="items__price">Rp 500.000</h3>
+							<button class="items__buybtn">Buy Now</button>
+						</div>
+					</li>
+					<li class="items__single items__single--state-outofstock">
+						<img class="items__img" src="img/sandisk.jpg">
+						<div class="items__detail">
+							<h3 class="items__name">Sandisk Ultra 3X</h3>
+							<h3 class="items__price">Rp 500.000</h3>
+							<button class="items__buybtn">Buy Now</button>
+						</div>
+					</li>
+					<li class="items__single items__single--state-outofstock">
+						<img class="items__img" src="img/sandisk.jpg">
+						<div class="items__detail">
+							<h3 class="items__name">Sandisk Ultra 3X</h3>
+							<h3 class="items__price">Rp 500.000</h3>
+							<button class="items__buybtn">Buy Now</button>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div id="fashion" class="items__tabcontent">
+				<ul class="items__list">
+					<li class="items__single items__single--state-bestprice">
+						<img class="items__img" src="img/billabong.png">
+						<div class="items__detail">
+							<h3 class="items__name">Kaos Billabong Navy</h3>
+							<h3 class="items__price">Rp 500.000</h3>
+							<button class="items__buybtn">Buy Now</button>
+						</div>
+					</li>
+					<li class="items__single items__single--state-outofstock">
+						<img class="items__img" src="img/billabong.png">
+						<div class="items__detail">
+							<h3 class="items__name">Kaos Billabong Navy</h3>
+							<h3 class="items__price">Rp 500.000</h3>
+							<button class="items__buybtn">Buy Now</button>
+						</div>
+					</li>
+					<li class="items__single">
+						<img class="items__img" src="img/billabong.png">
+						<div class="items__detail">
+							<h3 class="items__name">Kaos Billabong Navy</h3>
+							<h3 class="items__price">Rp 500.000</h3>
+							<button class="items__buybtn">Buy Now</button>
+						</div>
+					</li>
+					<li class="items__single items__single--state-outofstock">
+						<img class="items__img" src="img/billabong.png">
+						<div class="items__detail">
+							<h3 class="items__name">Kaos Billabong Navy</h3>
+							<h3 class="items__price">Rp 500.000</h3>
+							<button class="items__buybtn">Buy Now</button>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div id="lainnya" class="items__tabcontent">
+				<ul class="items__list">
+					<li class="items__single">
+						<img class="items__img" src="img/logik.jpg">
+						<div class="items__detail">
+							<h3 class="items__name">Logik Washing Machine</h3>
+							<h3 class="items__price">Rp 500.000</h3>
+							<button class="items__buybtn">Buy Now</button>
+						</div>
+					</li>
+					<li class="items__single items__single--state-bestprice">
+						<img class="items__img" src="img/logik.jpg">
+						<div class="items__detail">
+							<h3 class="items__name">Logik Washing Machine</h3>
+							<h3 class="items__price">Rp 500.000</h3>
+							<button class="items__buybtn">Buy Now</button>
+						</div>
+					</li>
+					<li class="items__single items__single--state-outofstock">
+						<img class="items__img" src="img/logik.jpg">
+						<div class="items__detail">
+							<h3 class="items__name">Logik Washing Machine</h3>
+							<h3 class="items__price">Rp 500.000</h3>
+							<button class="items__buybtn">Buy Now</button>
+						</div>
+					</li>
+					<li class="items__single">
+						<img class="items__img" src="img/logik.jpg">
+						<div class="items__detail">
+							<h3 class="items__name">Logik Washing Machine</h3>
+							<h3 class="items__price">Rp 500.000</h3>
+							<button class="items__buybtn">Buy Now</button>
+						</div>
+					</li>
+					<li class="items__single items__single--state-outofstock">
+						<img class="items__img" src="img/logik.jpg">
+						<div class="items__detail">
+							<h3 class="items__name">Logik Washing Machine</h3>
+							<h3 class="items__price">Rp 500.000</h3>
+							<button class="items__buybtn">Buy Now</button>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+	<footer class="footer"></footer>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
