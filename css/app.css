@@ -1,0 +1,292 @@
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	font-family: courier;
+	padding-bottom: 40px;
+}
+
+.header {
+	display: flex;
+	width: 100%;
+	height: 100px;
+	background-color: #d35400;
+}
+
+.header__main {
+	display: flex;
+	flex-basis: 100%;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.header__img {
+	display: none;		
+}	
+
+.header__title {
+	color: #222;
+	font-size: 2.5em;
+	margin: 0;
+}
+
+.header__desc {
+	display: none;		
+}
+
+.maincontent {
+	width: 90%;
+	margin: auto;
+}
+
+.event {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.event__img {
+	margin: 20px 0;
+	align-self: flex-start;
+}
+
+.event__socialbtn {
+	width: 175px;
+	background-color: #3b5998;
+	color: white;
+	border: none;
+	border-radius: 2.5px;
+	padding: 7.5px 5px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.event__title {
+	margin-top: 20px;
+	margin-bottom: 0;
+	font-size: 1.5em;
+	color: #d35400;
+}
+
+.event__titledesc {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 1.1em;	
+}
+
+.event__desc {
+	margin: 0; 
+	font-size: 0.825em;
+}
+
+.items {
+	margin-top: 20px;
+}
+
+.items__tab {
+	display: flex;
+	justify-content: center;
+}
+
+.items__tablink {
+	background-color: #bbb;
+	border: 1.25px solid #444;
+	padding: 10px;
+	margin: 0;
+	cursor: pointer;
+	outline: none;
+}
+
+.items__tablink--state-active {
+	cursor: default;
+	background-color: #eee;
+	border-bottom: none;
+	border-left: 1.25px solid #444;
+}
+
+.items__tabcontent {
+	display: none;
+	background-color: #eee;
+	border: 1.25px solid #444;
+	padding: 20px;
+	padding-bottom: 2.5px;
+	margin-top: -1.5px;
+}
+
+.items__tabcontent--state-active {
+	display: block;
+}
+
+.items__list {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.items__single {
+	display: flex;
+	flex-basis: 50%;
+	flex-wrap: wrap;
+	flex-direction: column;
+	border: 0.75px solid #444;
+}
+
+.items__img {
+	width: 100%;
+}
+
+.items__detail {
+	padding: 7.5px;
+}
+
+.items__name,
+.items__price {
+	font-size: 0.85em;
+	margin: 0;
+}
+
+.items__price {
+	color: #d35400;
+}
+
+.items__buybtn {
+	margin-top: 5px;
+	background-color: #f39c12;
+	color: #444;
+	font-size: 0.75em;
+	border: 0.75px solid #444;
+	border-radius: 2.5px;
+	padding: 5px 7.5px;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	outline: none;
+}
+
+.items__single--state-outofstock .items__name,
+.items__single--state-outofstock .items__price {
+	color: #999;
+}
+
+.items__single--state-outofstock .items__buybtn {
+	background-color: #999;
+	cursor: not-allowed;
+}
+
+.items__single--state-bestprice {
+	position: relative;
+}
+
+.items__single--state-bestprice > .items__detail {
+	border: 1.25px solid;
+	border-color: #dd2117;
+}
+
+.items__single--state-bestprice:after {
+	position: absolute;
+	content: 'Best Price';
+	background-color: red;
+	padding: 4px;
+	border-right: 0.75px solid #444;
+	border-bottom: 0.75px solid #444;
+	border-bottom-right-radius: 4px; 
+	top: 0;
+}
+
+@media (min-width: 600px) {
+	.header__main {
+		flex-basis: 75%;
+	}
+
+	.header__img {
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 80px;
+		flex-basis: 12.5%;
+	}
+
+	.header__img {	
+		display: block;
+	}
+
+	.header__img--castle {
+		background-image: url('../img/castle.png');
+	}
+
+	.header__img--cauldron {
+		background-image: url('../img/cauldron.png');	
+	}
+
+	.header__desc {
+		display: block;
+		color: white;
+		font-size: 1em;
+		text-align: center;
+		margin: 0;
+	}
+
+	.event {
+		flex-wrap: nowrap;
+		flex-direction: row;
+	}
+
+	.event__socialbtn {
+		align-self: flex-start;
+		order: 2;
+		flex-shrink: 0;
+		margin-bottom: 10px;
+	}
+
+	.event__details {
+		align-content: flex-start;
+		display: flex;
+		flex-wrap: wrap;
+		padding-left: 20px;
+		margin-top: 20px;
+	}
+
+	.event__title {
+		margin-top: 0;
+		font-size: 2.5em;
+		flex-grow: 1;
+	}
+
+	.event__titledesc {
+		flex-basis: 100%;
+		order: 3;
+	}
+
+	.event__desc {
+		order: 3;
+	}
+
+	.items__tab {
+		justify-content: flex-start;
+		padding-left: 20px;
+	}
+
+	.items__list {
+		align-content: flex-start;
+		justify-content: space-between; 
+	}
+
+	.items__single {
+		flex-basis: 24%;
+		margin-bottom: 1.25%;
+		float: left;
+	}
+}
